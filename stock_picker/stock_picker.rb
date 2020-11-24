@@ -14,3 +14,4 @@ def stock_picker(stock)
 end
 
 p stock_picker([170000,10000,6000000,90000,15,8,600,1000,10])
+p stock_picker([17,3,6,9,15,8,6,1,10])
