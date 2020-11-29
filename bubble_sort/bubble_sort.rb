@@ -1,12 +1,13 @@
-# n - 1 = max repeats that need to sort all items
-# n = array size
+# frozen_string_literal: true
+
 def bubble_sort(array)
   (array.size - 1).times do
     array.each_with_index do |item, index|
-      next_item = array[index+1]
+      next_item = array[index + 1]
       next unless next_item && item > next_item
+
       array[index] = next_item
-      array[index+1] = item
+      array[index + 1] = item
     end
   end
   array
